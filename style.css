@@ -36,10 +36,10 @@ body > main > div:nth-of-type(1) > div > p {
   margin-top: -65px;
 }
 body > main > header {
-  position: absolute;
-  top: 93%;
+  position: fixed;
+  top: 0px;
   opacity: 0;
-  transition: all 0.4s;
+  transition: all 0.2s;
   width: 100%;
   height: 53px;
   background-color: white;
@@ -48,6 +48,7 @@ body > main > header {
   padding-top: 5px;
   display: flex;
   border-bottom: 1px solid black;
+  z-index: 2;
 }
 body > main > header > p {
   margin-top: 0px;
@@ -87,14 +88,39 @@ body > main > section:nth-of-type(1) {
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
-  height: 665px;
+  height: 100%;
+  padding-top: 15%;
+  padding-bottom: 15%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 body > main > section:nth-of-type(1) > div:nth-of-type(1) {
-  position: absolute;
-  left: -67%;
+  margin-left: -166%;
+  opacity: 0;
+  background: black;
+  padding: 30px;
+  border: 3.1px dashed white;
+  border-style: dashed solid;
+  animation: clipBorder 2.3s infinite alternate-reverse;
+  color: white;
+  font-family: Post No Bills Jaffna;
+  font-size: 25px;
+  width: 57%;
+  transition: all 1.5s;
+  z-index: 1;
+}
+body > main > section:nth-of-type(1) > div:nth-of-type(1) > span > img {
+  margin: 0px;
+  border-radius: 50px;
+  width: 70px;
+}
+body > main > section:nth-of-type(1) > div:nth-of-type(2) {
+  margin-top: 0%;
+  opacity: 0;
+  z-index: 1;
+  margin-top: 10%;
   background: black;
   padding: 30px;
   border: 3.1px dashed white;
@@ -106,10 +132,42 @@ body > main > section:nth-of-type(1) > div:nth-of-type(1) {
   width: 57%;
   transition: all 1.5s;
 }
-body > main > section:nth-of-type(1) > div:nth-of-type(1) > span > img {
-  margin: 0px;
-  border-radius: 50px;
-  width: 70px;
+body > main > section:nth-of-type(1) > div:nth-of-type(2) > h1 {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+body > main > section:nth-of-type(1) > div:nth-of-type(2) > p {
+  margin-top: 2px;
+}
+body > main > section:nth-of-type(1) > div:nth-of-type(2) > p > a {
+  color: #ff00f7;
+  transition: all 0.5s;
+}
+body > main > section:nth-of-type(1) > div:nth-of-type(2) > p > a:hover {
+  color: #00ebff;
+}
+body > main > section:nth-of-type(1) > div:nth-of-type(3) {
+  margin-top: 0%;
+  opacity: 0;
+  z-index: 1;
+  margin-top: 10%;
+  background: black;
+  padding: 30px;
+  border: 3.1px dashed white;
+  border-style: dashed solid;
+  animation: clipBorder 2.3s infinite alternate-reverse;
+  color: white;
+  font-family: Post No Bills Jaffna;
+  font-size: 25px;
+  width: 57%;
+  transition: all 1.5s;
+}
+body > main > section:nth-of-type(1) > div:nth-of-type(3) > h1 {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+body > main > section:nth-of-type(1) > div:nth-of-type(3) > p {
+  margin-top: 2px;
 }
 
 @keyframes clipBorder {

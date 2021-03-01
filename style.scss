@@ -5,6 +5,8 @@ $police1: Roboto;
 $police2: Post No Bills Jaffna;
 $color1: white;
 $color2: black;
+$color3: #ff00f7;
+$color4: #00ebff;
 
 body {
     margin: 0px;
@@ -43,10 +45,10 @@ body {
         }
 
         & > header {
-            position: absolute;
-            top: 93%;
+            position: fixed;
+            top: 0px;
             opacity: 0;
-            transition: all 0.4s;
+            transition: all 0.2s;
             width: 100%;
             height: 53px;
             background-color: $color1;
@@ -55,6 +57,7 @@ body {
             padding-top: 5px;
             display: flex;
             border-bottom: 1px solid black;
+            z-index: 2;
             & > p {
                 margin-top: 0px;
                 margin-left: 21px;
@@ -95,13 +98,16 @@ body {
             background-attachment: fixed;
             background-size: cover;
             width: 100%;
-            height: 665px;
+            height: 100%;
+            padding-top: 15%;
+            padding-bottom: 15%;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             & > div:nth-of-type(1) {
-                position: absolute;
-                left: -67%;
+                margin-left: -166%;
+                opacity: 0;
                 background: black;
                 padding: 30px;
                 border: 3.1px dashed white;
@@ -112,10 +118,65 @@ body {
                 font-size: 25px;
                 width: 57%;
                 transition: all 1.5s;
+                z-index: 1;
                 & > span > img {
                     margin: 0px;
                     border-radius: 50px;
                     width: 70px;
+                }
+            }
+            & > div:nth-of-type(2) {
+                margin-top: 0%;
+                opacity: 0;
+                z-index: 1;
+                margin-top: 10%;
+                background: black;
+                padding: 30px;
+                border: 3.1px dashed white;
+                border-style: dashed solid;
+                animation: clipBorder 2.3s infinite alternate-reverse;
+                color: $color1;
+                font-family: $police2;
+                font-size: 25px;
+                width: 57%;
+                transition: all 1.5s;
+                & > h1 {
+                    text-align: center;
+                    margin-bottom: 4.5rem;
+                }
+                & > p {
+                    margin-top: 2px;
+                    & > a {
+                        color: $color3;
+                        transition: all 0.5s;
+                        &:hover {
+                            color: $color4;
+                        }
+                    }
+                }
+            }
+
+            & > div:nth-of-type(3) {
+                margin-top: 0%;
+                opacity: 0;
+                z-index: 1;
+                margin-top: 10%;
+                background: black;
+                padding: 30px;
+                border: 3.1px dashed white;
+                border-style: dashed solid;
+                animation: clipBorder 2.3s infinite alternate-reverse;
+                color: $color1;
+                font-family: $police2;
+                font-size: 25px;
+                width: 57%;
+                transition: all 1.5s;
+                & > h1 {
+                    text-align: center;
+                    margin-bottom: 4.5rem;
+                }
+                & > p {
+                    margin-top: 2px;
                 }
             }
         }
