@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("http://fonts.cdnfonts.com/css/post-no-bills-jaffna");
+::-webkit-scrollbar {
+  /* Scrollbars */
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border: 31px none #ffffff;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b9b9b9;
+}
+
 body {
   margin: 0px;
   margin-top: -16px;
@@ -11,6 +25,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  scrollbar-color: black;
 }
 body > main > div:nth-of-type(1) {
   width: 100%;
@@ -47,7 +62,8 @@ body > main > header {
   font-family: Post No Bills Jaffna;
   padding-top: 5px;
   display: flex;
-  border-bottom: 1px solid black;
+  animation: clipBorder 2.3s infinite alternate-reverse;
+  border-bottom: 0.01px solid black;
   z-index: 2;
 }
 body > main > header > p {
@@ -56,7 +72,7 @@ body > main > header > p {
   font-size: 33px;
 }
 body > main > header > a {
-  margin-top: 11px;
+  margin-top: 6.5px;
   font-size: 27px;
   cursor: pointer;
   transition: all 0.3s;
@@ -83,21 +99,23 @@ body > main > header > a:nth-of-type(3) {
 body > main > header > a:nth-of-type(3):hover {
   color: #0a66c2;
 }
-body > main > section:nth-of-type(1) {
+body > main > header > a > i {
+  display: none;
+}
+body > main > section {
   background-color: white;
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
   height: 100%;
   padding-top: 15%;
-  padding-bottom: 15%;
+  padding-bottom: 37%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-body > main > section:nth-of-type(1) > div:nth-of-type(1) {
-  margin-left: -166%;
+body > main > section > div {
   opacity: 0;
   background: black;
   padding: 30px;
@@ -110,64 +128,116 @@ body > main > section:nth-of-type(1) > div:nth-of-type(1) {
   width: 57%;
   transition: all 1.5s;
   z-index: 1;
+  box-shadow: 0px 20px 20px 0px #0101018c;
 }
-body > main > section:nth-of-type(1) > div:nth-of-type(1) > span > img {
+body > main > section > div:nth-of-type(1) {
+  margin-left: -166%;
+}
+body > main > section > div:nth-of-type(1) > span > img {
   margin: 0px;
   border-radius: 50px;
   width: 70px;
 }
-body > main > section:nth-of-type(1) > div:nth-of-type(2) {
+body > main > section > div:nth-of-type(2) {
   margin-top: 0%;
-  opacity: 0;
-  z-index: 1;
-  margin-top: 10%;
-  background: black;
-  padding: 30px;
-  border: 3.1px dashed white;
-  border-style: dashed solid;
-  animation: clipBorder 2.3s infinite alternate-reverse;
-  color: white;
-  font-family: Post No Bills Jaffna;
-  font-size: 25px;
-  width: 57%;
-  transition: all 1.5s;
 }
-body > main > section:nth-of-type(1) > div:nth-of-type(2) > h1 {
+body > main > section > div:nth-of-type(2) > h1 {
   text-align: center;
   margin-bottom: 4.5rem;
 }
-body > main > section:nth-of-type(1) > div:nth-of-type(2) > p {
+body > main > section > div:nth-of-type(2) > p {
   margin-top: 2px;
 }
-body > main > section:nth-of-type(1) > div:nth-of-type(2) > p > a {
+body > main > section > div:nth-of-type(2) > p > a {
   color: #ff00f7;
   transition: all 0.5s;
 }
-body > main > section:nth-of-type(1) > div:nth-of-type(2) > p > a:hover {
+body > main > section > div:nth-of-type(2) > p > a:hover {
   color: #00ebff;
 }
-body > main > section:nth-of-type(1) > div:nth-of-type(3) {
+body > main > section > div:nth-of-type(3) {
   margin-top: 0%;
-  opacity: 0;
-  z-index: 1;
-  margin-top: 10%;
-  background: black;
-  padding: 30px;
-  border: 3.1px dashed white;
-  border-style: dashed solid;
-  animation: clipBorder 2.3s infinite alternate-reverse;
-  color: white;
-  font-family: Post No Bills Jaffna;
-  font-size: 25px;
-  width: 57%;
-  transition: all 1.5s;
 }
-body > main > section:nth-of-type(1) > div:nth-of-type(3) > h1 {
+body > main > section > div:nth-of-type(3) > h1 {
   text-align: center;
   margin-bottom: 4.5rem;
 }
-body > main > section:nth-of-type(1) > div:nth-of-type(3) > p {
+body > main > section > div:nth-of-type(3) > p {
   margin-top: 2px;
+}
+body > main > section > div:nth-of-type(4) {
+  margin-left: -166%;
+  text-align: justify;
+  margin-top: 10%;
+}
+body > main > section > div:nth-of-type(4) > h1 {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+body > main > section > div:nth-of-type(4) > h3 {
+  margin-top: 0px;
+  margin-left: 10px;
+  display: inline-block;
+}
+body > main > section > div:nth-of-type(5) {
+  transform: scaleY(0);
+  opacity: 1;
+  margin-top: 10%;
+  text-align: justify;
+}
+body > main > section > div:nth-of-type(5) > h1 {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+body > main > section > div:nth-of-type(5) > h3 {
+  margin-top: 0px;
+  margin-left: 10px;
+  display: inline-block;
+}
+body > main > section > div:nth-of-type(6) {
+  transform: scale(1.45);
+  margin-top: 10%;
+  text-align: justify;
+}
+body > main > section > div:nth-of-type(6) > h1 {
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+body > main > section > div:nth-of-type(6) > h3 {
+  display: inline-block;
+}
+body > main > section > div:nth-of-type(6) > h3 > a {
+  margin-top: 0px;
+  margin-left: 10px;
+  color: white;
+}
+body > main > section > div:nth-of-type(6) > h3 > a:hover {
+  color: #00ebff;
+}
+body > main section > aside {
+  background-image: url("image/footer.svg");
+  background-repeat: space;
+  background-size: cover;
+  position: fixed;
+  bottom: 0px;
+  height: 426px;
+  width: 100%;
+  transform: translateY(380px);
+  transition: all 1s;
+}
+body > main section > aside > p {
+  text-align: center;
+  position: absolute;
+  left: 20%;
+  bottom: 0px;
+  font-size: 19px;
+  background: white;
+  width: 60%;
+  border-radius: 3px;
+  padding: 2px;
+  font-family: Roboto;
+  box-shadow: -1px 2px 6px 0px #0101014a;
+  color: black;
 }
 
 @keyframes clipBorder {
