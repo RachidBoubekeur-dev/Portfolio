@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('http://fonts.cdnfonts.com/css/post-no-bills-jaffna');
+@import url('https://pagecdn.io/lib/easyfonts/post-no-bills-jaffna.css');
 
-$police1: Roboto;
-$police2: Post No Bills Jaffna;
+$police1: Roboto, Arial;
+$police2: Post No Bills Jaffna, Arial;
 
 $color1: white;
 $color2: black;
 $color3: #ff00f7;
 $color4: #00ebff;
 
-::-webkit-scrollbar {									/* Scrollbars */
+::-webkit-scrollbar {
 	width: 9px;
 	height: 9px;
     &-thumb {
