@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-@import url("https://pagecdn.io/lib/easyfonts/post-no-bills-jaffna.css");
+@font-face {
+  font-family: "Post No Bills Jaffna";
+  src: url("police/PostNoBillsJaffna-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Post No Bills Jaffna M";
+  src: url("police/PostNoBillsJaffna-Medium.ttf") format("truetype");
+}
 ::-webkit-scrollbar {
   width: 9px;
   height: 9px;
@@ -11,6 +18,10 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #b9b9b9;
+}
+
+p {
+  font-family: Post No Bills Jaffna M, Arial;
 }
 
 body {
@@ -60,7 +71,7 @@ body > main > header {
   height: 53px;
   background-color: white;
   color: black;
-  font-family: Post No Bills Jaffna, Arial;
+  font-family: Post No Bills Jaffna M, Arial;
   padding-top: 5px;
   display: flex;
   justify-content: flex-end;
@@ -81,18 +92,23 @@ body > main > header > a {
   transition: all 0.3s;
   color: black;
 }
+body > main > header > a:nth-of-type(1) {
+  display: none;
+}
 body > main > header > a:nth-of-type(1):hover {
   color: #c400aa;
 }
 body > main > header > a:nth-of-type(2) {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 13px;
+  margin-right: 13px;
+  display: none;
 }
 body > main > header > a:nth-of-type(2):hover {
   color: #9c2222;
 }
 body > main > header > a:nth-of-type(3) {
   margin-right: 15px;
+  display: none;
 }
 body > main > header > a:nth-of-type(3):hover {
   color: #0a66c2;
@@ -126,6 +142,9 @@ body > main > section > div {
   margin-bottom: 70px;
   width: 85%;
   padding: 14px;
+}
+body > main > section > div:nth-of-type(1) {
+  margin-left: -300%;
 }
 body > main > section > div:nth-of-type(1) > span > img {
   margin: 0px;
@@ -241,6 +260,152 @@ body > main section > aside > p {
   }
   100% {
     border-color: pink;
+  }
+}
+@media screen and (min-width: 457px) and (max-width: 768px) {
+  body > main > div:nth-of-type(1) > div {
+    width: 392px;
+  }
+  body > main > section > aside > p {
+    left: 11.5%;
+    width: 75%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 828px) {
+  body > main > div:nth-of-type(1) > div {
+    width: 399px;
+    padding: 23px;
+    font-size: 30px;
+  }
+  body > main > section {
+    padding-top: 15%;
+  }
+  body > main > section > div {
+    font-size: 23px;
+    padding: 20px;
+  }
+  body > main > section > div:nth-of-type(2) {
+    margin-top: -70px;
+  }
+  body > main > section > div:nth-of-type(3) {
+    margin-top: -70px;
+  }
+  body > main > section > div:nth-of-type(4) {
+    text-align: justify;
+  }
+  body > main > section > div:nth-of-type(4) > h1 {
+    text-align: center;
+  }
+  body > main > section > div:nth-of-type(5) {
+    text-align: justify;
+  }
+  body > main > section > div:nth-of-type(5) > h1 {
+    text-align: center;
+  }
+  body > main > section > div:nth-of-type(6) {
+    text-align: justify;
+  }
+  body > main > section > div:nth-of-type(6) > h1 {
+    text-align: center;
+  }
+  body > main > section > aside {
+    transform: translateY(380px);
+  }
+  body > main > section > aside > p {
+    left: 11.5%;
+    width: 75%;
+  }
+}
+@media screen and (min-width: 829px) and (max-width: 996px) {
+  body > main > div:nth-of-type(1) > div {
+    width: 399px;
+    padding: 23px;
+    font-size: 30px;
+  }
+  body > main > section {
+    padding-top: 15%;
+    padding-bottom: 9.5%;
+  }
+  body > main > section > div {
+    font-size: 23px;
+    padding: 20px;
+  }
+  body > main > section > div:nth-of-type(2) {
+    margin-top: -70px;
+  }
+  body > main > section > div:nth-of-type(3) {
+    margin-top: -70px;
+  }
+  body > main > section > div:nth-of-type(4) {
+    text-align: justify;
+  }
+  body > main > section > div:nth-of-type(4) > h1 {
+    text-align: center;
+  }
+  body > main > section > div:nth-of-type(5) {
+    text-align: justify;
+  }
+  body > main > section > div:nth-of-type(5) > h1 {
+    text-align: center;
+  }
+  body > main > section > div:nth-of-type(6) {
+    text-align: justify;
+  }
+  body > main > section > div:nth-of-type(6) > h1 {
+    text-align: center;
+  }
+  body > main > section > aside {
+    transform: translateY(430px);
+  }
+  body > main > section > aside > p {
+    left: 11.5%;
+    width: 75%;
+  }
+}
+@media screen and (min-width: 997px) {
+  body > main > div:nth-of-type(1) > div {
+    width: 399px;
+    padding: 23px;
+    font-size: 30px;
+  }
+  body > main > section {
+    padding-top: 15%;
+    padding-bottom: 9.5%;
+  }
+  body > main > section > div {
+    font-size: 23px;
+    padding: 20px;
+  }
+  body > main > section > div:nth-of-type(2) {
+    margin-top: -70px;
+  }
+  body > main > section > div:nth-of-type(3) {
+    margin-top: -70px;
+  }
+  body > main > section > div:nth-of-type(4) {
+    text-align: justify;
+  }
+  body > main > section > div:nth-of-type(4) > h1 {
+    text-align: center;
+  }
+  body > main > section > div:nth-of-type(5) {
+    text-align: justify;
+  }
+  body > main > section > div:nth-of-type(5) > h1 {
+    text-align: center;
+  }
+  body > main > section > div:nth-of-type(6) {
+    text-align: justify;
+  }
+  body > main > section > div:nth-of-type(6) > h1 {
+    text-align: center;
+  }
+  body > main > section > aside {
+    transform: translateY(430px);
+  }
+  body > main > section > aside > p {
+    left: 11.5%;
+    width: 75%;
   }
 }
 
