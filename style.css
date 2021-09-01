@@ -31,11 +31,6 @@ body {
   background: url("image/background.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   scrollbar-color: black;
 }
 body > main > div:nth-of-type(1) {
@@ -143,8 +138,15 @@ body > main > section > div {
   width: 85%;
   padding: 14px;
 }
+body > main > section > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
 body > main > section > div:nth-of-type(1) > span > img {
-  margin: 0px;
+  margin: 0 1em 0 0;
   border-radius: 50px;
   width: 70px;
 }
