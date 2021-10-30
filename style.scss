@@ -119,6 +119,22 @@ body {
                         color: #0a66c2;
                     }
                 }
+                &:nth-of-type(4) {
+                    margin-right: 15px;
+                    text-decoration: none;
+                    display: none;
+                    &:hover {
+                        color: #ff3b5c;
+                    }
+                }
+                &:nth-of-type(5) {
+                    margin-right: 15px;
+                    text-decoration: none;
+                    display: none;
+                    &:hover {
+                        color: #38b6ff;
+                    }
+                }
                 & > i {
                     display: none;
                 }
@@ -192,10 +208,17 @@ body {
                     & > h1 {
                         margin-bottom: 4.5rem;
                     }
-                    & > h3 {
+                    & > p {
+                        font-family: $police2;
                         margin-top: 0px;
                         margin-left: 10px;
                         display: inline-block;
+                        font-size: 1.17em;
+                        margin-block-start: 1em;
+                        margin-block-end: 1em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                        font-weight: bold;
                     }
                 }
                 &:nth-of-type(5) {
@@ -203,10 +226,17 @@ body {
                     & > h1 {
                         margin-bottom: 4.5rem;
                     }
-                    & > h3 {
+                    & > p {
+                        font-family: $police2;
                         margin-top: 0px;
                         margin-left: 10px;
                         display: inline-block;
+                        font-size: 1.17em;
+                        margin-block-start: 1em;
+                        margin-block-end: 1em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                        font-weight: bold;
                     }
                 }
                 &:nth-of-type(6) {
@@ -214,8 +244,15 @@ body {
                     & > h1 {
                         margin-bottom: 4.5rem;
                     }
-                    & > h3 {
+                    & > p {
+                        font-family: $police2;
                         display: inline-block;
+                        font-size: 1.17em;
+                        margin-block-start: 1em;
+                        margin-block-end: 1em;
+                        margin-inline-start: 0px;
+                        margin-inline-end: 0px;
+                        font-weight: bold;
                         & > a {
                             margin-top: 0px;
                             margin-left: 10px;

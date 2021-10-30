@@ -1,15 +1,20 @@
 window.addEventListener('scroll', () => {
-    if(screen.width <= 768) {
+    if (screen.width <= 768) {
+        if (screen.width <= 365) document.querySelector('header').style.height = "90px";
         if(window.scrollY > 590) {
             document.querySelector('header > a:nth-of-type(1)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(2)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(3)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "inline-block";
             document.querySelector('header').style.opacity = 1;
         } else {
             document.querySelector('header').style.opacity = 0;
             document.querySelector('header > a:nth-of-type(1)').style.display = "none";
             document.querySelector('header > a:nth-of-type(2)').style.display = "none";
             document.querySelector('header > a:nth-of-type(3)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "none";
         }
     }
 
@@ -19,12 +24,16 @@ window.addEventListener('scroll', () => {
             document.querySelector('header > a:nth-of-type(1)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(2)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(3)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "inline-block";
             document.querySelector('header').style.opacity = 1;
         } else {
             document.querySelector('header').style.opacity = 0;
             document.querySelector('header > a:nth-of-type(1)').style.display = "none";
             document.querySelector('header > a:nth-of-type(2)').style.display = "none";
             document.querySelector('header > a:nth-of-type(3)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "none";
         }
     
         if(window.scrollY > 500 && window.scrollY < 920) {
@@ -85,12 +94,16 @@ window.addEventListener('scroll', () => {
             document.querySelector('header > a:nth-of-type(1)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(2)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(3)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "inline-block";
             document.querySelector('header').style.opacity = 1;
         } else {
             document.querySelector('header').style.opacity = 0;
             document.querySelector('header > a:nth-of-type(1)').style.display = "none";
             document.querySelector('header > a:nth-of-type(2)').style.display = "none";
             document.querySelector('header > a:nth-of-type(3)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "none";
         }
     
         if(window.scrollY > 500 && window.scrollY < 920) {
@@ -165,12 +178,16 @@ window.addEventListener('scroll', () => {
             document.querySelector('header > a:nth-of-type(1)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(2)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(3)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "inline-block";
             document.querySelector('header').style.opacity = 1;
         } else {
             document.querySelector('header').style.opacity = 0;
             document.querySelector('header > a:nth-of-type(1)').style.display = "none";
             document.querySelector('header > a:nth-of-type(2)').style.display = "none";
             document.querySelector('header > a:nth-of-type(3)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "none";
         }
     
         if(window.scrollY > 500 && window.scrollY < 920) {
@@ -267,12 +284,16 @@ window.addEventListener('scroll', () => {
             document.querySelector('header > a:nth-of-type(1)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(2)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(3)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "inline-block";
             document.querySelector('header').style.opacity = 1;
         } else {
             document.querySelector('header').style.opacity = 0;
             document.querySelector('header > a:nth-of-type(1)').style.display = "none";
             document.querySelector('header > a:nth-of-type(2)').style.display = "none";
             document.querySelector('header > a:nth-of-type(3)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "none";
         }
     
         if(window.scrollY > 550 && window.scrollY < 970) {
@@ -333,12 +354,16 @@ window.addEventListener('scroll', () => {
             document.querySelector('header > a:nth-of-type(1)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(2)').style.display = "inline-block";
             document.querySelector('header > a:nth-of-type(3)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "inline-block";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "inline-block";
             document.querySelector('header').style.opacity = 1;
         } else {
             document.querySelector('header').style.opacity = 0;
             document.querySelector('header > a:nth-of-type(1)').style.display = "none";
             document.querySelector('header > a:nth-of-type(2)').style.display = "none";
             document.querySelector('header > a:nth-of-type(3)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(4)').style.display = "none";
+            document.querySelector('header > a:nth-of-type(5)').style.display = "none";
         }
     
         if(window.scrollY > 550 && window.scrollY < 1070) {

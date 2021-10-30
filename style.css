@@ -108,6 +108,22 @@ body > main > header > a:nth-of-type(3) {
 body > main > header > a:nth-of-type(3):hover {
   color: #0a66c2;
 }
+body > main > header > a:nth-of-type(4) {
+  margin-right: 15px;
+  text-decoration: none;
+  display: none;
+}
+body > main > header > a:nth-of-type(4):hover {
+  color: #ff3b5c;
+}
+body > main > header > a:nth-of-type(5) {
+  margin-right: 15px;
+  text-decoration: none;
+  display: none;
+}
+body > main > header > a:nth-of-type(5):hover {
+  color: #38b6ff;
+}
 body > main > header > a > i {
   display: none;
 }
@@ -177,10 +193,17 @@ body > main > section > div:nth-of-type(4) {
 body > main > section > div:nth-of-type(4) > h1 {
   margin-bottom: 4.5rem;
 }
-body > main > section > div:nth-of-type(4) > h3 {
+body > main > section > div:nth-of-type(4) > p {
+  font-family: Post No Bills Jaffna, Arial;
   margin-top: 0px;
   margin-left: 10px;
   display: inline-block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 body > main > section > div:nth-of-type(5) {
   text-align: center;
@@ -188,10 +211,17 @@ body > main > section > div:nth-of-type(5) {
 body > main > section > div:nth-of-type(5) > h1 {
   margin-bottom: 4.5rem;
 }
-body > main > section > div:nth-of-type(5) > h3 {
+body > main > section > div:nth-of-type(5) > p {
+  font-family: Post No Bills Jaffna, Arial;
   margin-top: 0px;
   margin-left: 10px;
   display: inline-block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 body > main > section > div:nth-of-type(6) {
   text-align: center;
@@ -199,15 +229,22 @@ body > main > section > div:nth-of-type(6) {
 body > main > section > div:nth-of-type(6) > h1 {
   margin-bottom: 4.5rem;
 }
-body > main > section > div:nth-of-type(6) > h3 {
+body > main > section > div:nth-of-type(6) > p {
+  font-family: Post No Bills Jaffna, Arial;
   display: inline-block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
-body > main > section > div:nth-of-type(6) > h3 > a {
+body > main > section > div:nth-of-type(6) > p > a {
   margin-top: 0px;
   margin-left: 10px;
   color: white;
 }
-body > main > section > div:nth-of-type(6) > h3 > a:hover {
+body > main > section > div:nth-of-type(6) > p > a:hover {
   color: #00ebff;
 }
 body > main section > aside {
